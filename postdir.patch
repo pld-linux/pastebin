@@ -1,0 +1,11 @@
+--- pastebin/lib/pastebin/db.file.class.php~	2012-03-10 13:51:05.000000000 +0200
++++ pastebin/lib/pastebin/db.file.class.php	2012-03-10 13:51:08.331870883 +0200
+@@ -59,7 +59,7 @@
+ 	function DB()
+ 	{
+ 		
+-		$this->postdir=$_SERVER['DOCUMENT_ROOT'].'/../posts/';
++		$this->postdir = '/var/lib/pastebin/';
+ 		if (!is_writable($this->postdir)) die("{$this->postdir} needs to be a writable dir to use file storage engine");
+ 		
+ 		

@@ -1,0 +1,20 @@
+--- pastebin/public_html/layout.php~	2007-07-10 18:22:37.000000000 +0300
++++ pastebin/public_html/layout.php	2012-03-10 13:57:42.208423209 +0200
+@@ -34,7 +34,7 @@
+ <head>
+ <title><?php echo $page['title'] ?></title>
+ <meta name="ROBOTS" content="NOARCHIVE"/>
+-<link rel="stylesheet" type="text/css" media="screen" href="/pastebin.css?ver=4" />
++<link rel="stylesheet" type="text/css" media="screen" href="pastebin.css?ver=4" />
+ 
+ <?php if (isset($page['post']['codecss']))
+ {
+@@ -43,7 +43,7 @@
+ 	echo '</style>';
+ }
+ ?>
+-<script type="text/javascript" src="/pastebin.js?ver=3"></script>
++<script type="text/javascript" src="pastebin.js?ver=3"></script>
+ </head>
+ 
+ 

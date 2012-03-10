@@ -1,0 +1,11 @@
+--- pastebin/public_html/pastebin.php~	2012-03-10 14:00:39.000000000 +0200
++++ pastebin/public_html/pastebin.php	2012-03-10 14:01:24.527766825 +0200
+@@ -89,7 +89,7 @@
+ 
+ function t($str)
+ {
+-	//global $CONF;
++	global $CONF;
+ 	
+ 	//if in maintainance mode, record this string in the translation db
+ 	if ($CONF['maintainer_mode'])
