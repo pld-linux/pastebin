@@ -1,6 +1,6 @@
 %define		php_min_version 5.0.0
 %include	/usr/lib/rpm/macros.php
-Summary:	Package that uses webapps configuration
+Summary:	A collaborative debugging tool
 Name:		pastebin
 Version:	0.60
 Release:	0.8
@@ -17,10 +17,10 @@ Source1:	apache.conf
 Source2:	lighttpd.conf
 URL:		http://blog.dixo.net/downloads/
 BuildRequires:	rpmbuild(macros) >= 1.553
-Requires:	php-common >= 4:%{php_min_version}
-Requires:	php-date
+Requires:	php(core) >= %{php_min_version}
+Requires:	php(date)
+Requires:	php(pcre)
 Requires:	php-geshi >= 1.0.7
-Requires:	php-pcre
 Requires:	webapps
 Requires:	webserver(access)
 Requires:	webserver(alias)
