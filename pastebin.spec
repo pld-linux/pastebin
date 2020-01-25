@@ -1,5 +1,4 @@
 %define		php_min_version 5.0.0
-%include	/usr/lib/rpm/macros.php
 Summary:	A collaborative debugging tool
 Name:		pastebin
 Version:	0.60
